@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { Inter_Tight } from "next/font/google";
+import { IBM_Plex_Mono } from "next/font/google";
 import "../styles/globals.css";
 
-const interTight = Inter_Tight({
+const ibmPlexMono = IBM_Plex_Mono({
   subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700"],
   display: "swap",
-  variable: "--font-inter-tight",
+  variable: "--font-ibm-plex-mono",
 });
 
 export const metadata: Metadata = {
@@ -19,8 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja" className={interTight.variable}>
-      <body>{children}</body>
+    <html lang="ja" className={ibmPlexMono.variable}>
+      <body className="font-mono">{children}</body>
     </html>
   );
 }
