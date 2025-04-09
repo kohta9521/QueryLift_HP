@@ -1,7 +1,13 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
+// css
 import "../styles/globals.css";
 
+// radix ui
+import "@radix-ui/themes/styles.css";
+import { Theme, ThemePanel } from "@radix-ui/themes";
+
+// fonts
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
@@ -12,7 +18,10 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={inter.className}>
-        <div className="min-h-screen bg-white">{children}</div>
+        <Theme>
+          {children}
+          <ThemePanel />
+        </Theme>
       </body>
     </html>
   );
