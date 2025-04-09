@@ -5,7 +5,7 @@ import "../styles/globals.css";
 
 // radix ui
 import "@radix-ui/themes/styles.css";
-import { Theme, ThemePanel } from "@radix-ui/themes";
+import { Theme } from "@radix-ui/themes";
 
 // fonts
 const inter = Inter({ subsets: ["latin"] });
@@ -18,10 +18,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={inter.className}>
-        <Theme>
-          {children}
-          <ThemePanel />
-        </Theme>
+        <Theme>{children}</Theme>
       </body>
     </html>
   );
