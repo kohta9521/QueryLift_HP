@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Athena - AIを活用した解析プラットフォーム",
+    "description": "Athenaは、AIを活用した解析プラットフォームで、複雑なデータをシンプルな会話に変換します。"
+  },
+  "header": {
+    "navigation": {
+      "product": "製品",
+      "pricing": "料金",
+      "useCases": "ユースケース",
+      "resources": "リソース",
+      "company": "企業情報"
+    },
+    "actions": {
+      "login": "ログイン",
+      "getStarted": "無料で始める",
+      "languageSwitch": "EN"
+    }
+  },
+  "hero": {
+    "headline": "チャットと分析で得られる真の洞察",
+    "subheadline": "Athenaは、AIを活用した解析プラットフォームで、複雑なデータをシンプルな会話に変換します。",
+    "callToAction": "無料で始める",
+    "secondaryAction": "デモを見る",
+    "stats": {
+      "title": "世界中で信頼されています",
+      "items": [
+        {
+          "number": "10M+",
+          "label": "クエリ処理/日"
+        },
+        {
+          "number": "97%",
+          "label": "顧客満足度"
+        },
+        {
+          "number": "3000+",
+          "label": "企業が利用中"
+        }
+      ]
+    }
+  }
+}

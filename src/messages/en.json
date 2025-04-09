@@ -1,0 +1,43 @@
+{
+  "meta": {
+    "title": "Athena - AI-powered Analytics Platform",
+    "description": "Athena is an AI-powered analytics platform that transforms complex data into simple conversations."
+  },
+  "header": {
+    "navigation": {
+      "product": "Product",
+      "pricing": "Pricing",
+      "useCases": "Use Cases",
+      "resources": "Resources",
+      "company": "Company"
+    },
+    "actions": {
+      "login": "Log in",
+      "getStarted": "Get Started",
+      "languageSwitch": "日本語"
+    }
+  },
+  "hero": {
+    "headline": "True insights through chat and analysis",
+    "subheadline": "Athena is an AI-powered analytics platform that transforms complex data into simple conversations.",
+    "callToAction": "Get Started",
+    "secondaryAction": "See Demo",
+    "stats": {
+      "title": "Trusted worldwide",
+      "items": [
+        {
+          "number": "10M+",
+          "label": "queries processed daily"
+        },
+        {
+          "number": "97%",
+          "label": "customer satisfaction"
+        },
+        {
+          "number": "3000+",
+          "label": "companies"
+        }
+      ]
+    }
+  }
+}
