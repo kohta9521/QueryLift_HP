@@ -1,3 +1,6 @@
+import React from "react";
+
+// spline
 import Spline from "@splinetool/react-spline/next";
 
 const Hero = () => {
