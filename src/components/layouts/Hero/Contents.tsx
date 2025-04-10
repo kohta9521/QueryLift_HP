@@ -25,14 +25,14 @@ const Contents: React.FC = () => {
   };
 
   return (
-    <div className="absolute inset-0 flex md:items-center z-[1]">
+    <div className="absolute inset-0 flex md:items-center z-[1] pointer-events-none">
       <div className="container mx-auto px-4 lg:px-8 flex md:block">
-        <div className="max-w-xl ml-4 md:ml-12 lg:ml-24 md:mt-0 mt-auto mb-5 md:mb-0">
-          <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-2">
+        <div className="max-w-xl ml-4 md:ml-16 lg:ml-32 xl:ml-40 md:mt-0 mt-auto mb-12 md:mb-0 pointer-events-auto">
+          <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">
             Dominate <span className="text-blue-600">AI Search Results</span>
           </h1>
 
-          <p className="text-base md:text-base text-gray-700 mb-4">
+          <p className="text-lg md:text-xl text-gray-700 mb-6">
             Generative AI is shaping brand discovery. AthenaHQ ensures your
             brand{" "}
             <span className="font-medium text-blue-600">
