@@ -6,7 +6,10 @@ import NewsCard from "@/components/layouts/Hero/NewsCard";
 
 const Hero: React.FC = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden">
+    <div
+      data-scroll-section
+      className="relative w-full h-screen overflow-hidden"
+    >
       <div className="absolute inset-0 w-full h-full">
         <Spline
           scene="https://prod.spline.design/IKDO7hQSCOh2FLHB/scene.splinecode"

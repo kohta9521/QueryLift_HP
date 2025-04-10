@@ -3,20 +3,19 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
+
+  --primary: ;
+
+  --font-ibm-plex-mono: "IBM Plex Mono", monospace;
+  --font-ibm-plex-sans-jp: "IBM Plex Sans JP", sans-serif;
 }
 
+html,
 body {
+  font-family: var(--font-ibm-plex-sans-jp), var(--font-ibm-plex-mono),
+    sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
-}
-
-/* 言語特有のスタイル調整 */
-html[lang="ja"] {
-  /* 日本語フォントを優先 */
-  font-family: "Inter", "Noto Sans JP", sans-serif;
-}
-
-html[lang="en"] {
-  /* 英語フォントを優先 */
-  font-family: "Inter", system-ui, sans-serif;
 }
