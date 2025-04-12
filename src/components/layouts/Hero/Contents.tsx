@@ -41,12 +41,8 @@ const Contents: React.FC = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-700 mb-6">
-            Generative AI is shaping brand discovery. QueryLift ensures your
-            brand{" "}
-            <span className="font-medium text-blue-600">
-              leads the conversation
-            </span>
-            .
+            生成AI時代の検索可視性を支配する。
+            QueryLiftが、SEOとGEOの両面から“選ばれる情報”を設計します。
           </p>
 
           {/* SEOチェッカー */}
