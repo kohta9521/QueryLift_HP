@@ -9,10 +9,14 @@ import SecTitle from "../../ui/text/SecTitle";
 // icon
 import { PiStarFourFill } from "react-icons/pi";
 
+// next
+import Image from "next/image";
+import ViewMoreButton from "../../ui/button/ViewMoreButton";
+
 export default function About() {
   useAOS();
   return (
-    <section id="about" className="w-11/12 mx-auto py-30 md:w-7/12">
+    <section id="about" className="w-11/12 mx-auto py-30 md:py-40 md:w-7/12">
       <SecTitle
         id="about"
         icon={
@@ -20,33 +24,33 @@ export default function About() {
             <PiStarFourFill />
           </>
         }
-        jatitle="QueryLiftとは"
+        jatitle="GEO時代の伴走者"
         entitle="What's QueryLift"
       />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-        voluptatibus repellat porro, voluptatum odit deleniti dolor praesentium!
-        Eaque illo iste explicabo ullam! Commodi sunt maiores qui doloribus
-        soluta ratione veniam doloremque vero rerum, vitae assumenda in laborum
-        voluptatibus accusantium sint labore ad suscipit eius quaerat totam
-        accusamus iste, fugit, provident cupiditate. Omnis minus assumenda
-        voluptas cumque veniam provident optio excepturi eligendi quia corporis
-        aliquid porro, aliquam deserunt, id accusamus ipsam fugiat, nobis vel.
-        Et veritatis eaque magni perferendis debitis dolorum eveniet tempora
-        fugit non nobis dolores distinctio voluptatem adipisci officiis, maiores
-        earum? Iure esse, fugit at cum deleniti praesentium quod necessitatibus
-        accusamus mollitia commodi, porro veritatis id laborum quo! Aperiam
-        itaque molestias unde beatae accusamus impedit nihil consectetur
-        accusantium exercitationem delectus quaerat dolorum dolore doloremque
-        quam, porro necessitatibus totam, corporis, sequi qui eum repudiandae
-        aliquam. Dolorum fugiat eos veniam, quod, praesentium itaque voluptate
-        soluta velit aperiam eveniet animi aliquam numquam nulla quidem, sit
-        voluptas sed consequuntur beatae. Ipsam vero impedit, ad nam distinctio
-        temporibus laboriosam rem dolores obcaecati quo quidem mollitia
-        quibusdam illum provident nostrum eum quam, labore pariatur culpa fugit
-        officia architecto qui commodi perspiciatis. Quod accusamus dolorum
-        maxime, nihil corrupti ea vel ipsa in excepturi inventore totam? Iste?{" "}
+      <p data-aos="fade-up" className="main-text mb-10">
+        我々はGEO（生成エンジン最適化）時代に、価値あるブランドが正しく可視化されることを目的として分析ツールを開発しています。
+        <br />
+        検索は「能動」から「受動」へ変化を遂げています。AI検索型の時代ではユーザーは情報を選べません。AIに選ばれるどうかが全てであり、選ばれない情報は存在していないと同義です。これからはSEO以上の熾烈な争いの時代に変化します。
+        <br />
+        我々とGEO時代の全く新しいアプローチでの伴奏者を実現します。
       </p>
+      <div className="mb-7 flex md:justify-end">
+        <ViewMoreButton href="/about">もっと見る</ViewMoreButton>
+      </div>
+      {/* Image */}
+      <div
+        data-aos="fade-up"
+        className="w-full h-auto bg-gray-100 shadow-lg rounded-xl overflow-hidden"
+      >
+        <Image
+          className="w-full h-[250px] md:h-[700px] object-cover"
+          src="/images/about-2.png"
+          width={800}
+          height={500}
+          quality={100}
+          alt="about-section-image"
+        />
+      </div>
     </section>
   );
 }
