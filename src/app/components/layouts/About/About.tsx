@@ -1,9 +1,28 @@
 "use client";
 
+// hooks
+import useAOS from "@/hooks/useAOS";
+
+// components
+import SecTitle from "../../ui/text/SecTitle";
+
+// icon
+import { PiStarFourFill } from "react-icons/pi";
+
 export default function About() {
+  useAOS();
   return (
-    <section className="w-11/12 mx-auto py-30">
-      <h1 className="text-5xl font-semibold mb-10">About</h1>
+    <section id="about" className="w-11/12 mx-auto py-30 md:w-7/12">
+      <SecTitle
+        id="about"
+        icon={
+          <>
+            <PiStarFourFill />
+          </>
+        }
+        jatitle="QueryLiftとは"
+        entitle="What's QueryLift"
+      />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
         voluptatibus repellat porro, voluptatum odit deleniti dolor praesentium!
