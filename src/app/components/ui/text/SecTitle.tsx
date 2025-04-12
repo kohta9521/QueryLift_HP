@@ -1,4 +1,8 @@
+"use client";
 import React from "react";
+
+// hooks
+import useAOS from "@/hooks/useAOS";
 
 // props
 export type SecTitleProps = {
@@ -9,15 +13,16 @@ export type SecTitleProps = {
 };
 
 const SecTitle = ({ id, icon, jatitle, entitle }: SecTitleProps) => {
+  useAOS();
   return (
-    <div key={id} className="inline-block mb-6">
+    <div key={id} data-aos="fade-up" className="inline-block mb-6">
       <div className="flex items-center mb-1">
-        <div className="text-blue-600 mr-2">{icon}</div>
+        <div className="text-blue-600 mr-1">{icon}</div>
         <p className="text-sm md:text-base text-blue-600 font-bold">
           {jatitle}
         </p>
       </div>
-      <h1 className="text-3xl md:text-5xl font-bold">{entitle}</h1>
+      <h1 className="text-4xl md:text-5xl font-bold">{entitle}</h1>
     </div>
   );
 };
