@@ -10,7 +10,7 @@ export type SecTitleProps = {
 
 const SecTitle = ({ id, icon, jatitle, entitle }: SecTitleProps) => {
   return (
-    <div key={id} className="inline-block mb-20">
+    <div key={id} className="inline-block mb-6">
       <div className="flex items-center mb-1">
         <div className="text-blue-600 mr-2">{icon}</div>
         <p className="text-sm md:text-base text-blue-600 font-bold">

@@ -5,7 +5,7 @@ import SecTitle from "../../ui/text/SecTitle";
 
 const About = () => {
   return (
-    <div className="w-full h-auto py-22">
+    <div id="about" className="w-full h-auto py-22">
       <div className="w-11/12 md:w-8/12 mx-auto">
         <SecTitle
           id="top-about"
@@ -30,7 +30,11 @@ const About = () => {
           jatitle="QueryLiftとは"
           entitle="What's QueryLift"
         />
-        <p className="">サンプルの日本語</p>
+        <div className="w-full h-auto">
+          <p className="text-base font-[var(--font-ibm-plex-sans-jp)]">
+            我々はGEO(生成エンジン最適化)時代に、価値あるブランドが正しく可視化されることを目的とした分析ツールを開発しています。
+          </p>
+        </div>
       </div>
     </div>
   );
