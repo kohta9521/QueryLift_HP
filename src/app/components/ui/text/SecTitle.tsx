@@ -15,7 +15,7 @@ export type SecTitleProps = {
 const SecTitle = ({ id, icon, jatitle, entitle }: SecTitleProps) => {
   useAOS();
   return (
-    <div key={id} data-aos="fade-up" className="inline-block mb-6">
+    <div key={id} data-aos="fade-up" className="inline-block mb-14">
       <div className="flex items-center mb-1">
         <div className="text-blue-600 mr-1">{icon}</div>
         <p className="text-sm md:text-base text-blue-600 font-bold">

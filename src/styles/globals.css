@@ -19,3 +19,9 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
 }
+
+@layer components {
+  .main-text {
+    @apply font-sans text-base leading-relaxed text-gray-900 tracking-normal md:text-lg;
+  }
+}
