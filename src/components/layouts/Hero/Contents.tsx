@@ -33,7 +33,7 @@ const Contents: React.FC = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-700 mb-6">
-            Generative AI is shaping brand discovery. AthenaHQ ensures your
+            Generative AI is shaping brand discovery. QueryLift ensures your
             brand{" "}
             <span className="font-medium text-blue-600">
               leads the conversation
