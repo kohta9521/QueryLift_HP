@@ -2,21 +2,21 @@
 import "../styles/globals.css";
 
 // fonts
-import { IBM_Plex_Mono, IBM_Plex_Sans_JP } from "next/font/google";
+import { Noto_Sans, Noto_Sans_JP } from "next/font/google";
 
-const ibmPlexMono = IBM_Plex_Mono({
+const notoSans = Noto_Sans({
   weight: ["100", "200", "300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
-  variable: "--font-ibm-plex-mono",
+  variable: "--font-noto-sans",
   display: "swap",
 });
 
-const ibmPlexSansJP = IBM_Plex_Sans_JP({
-  weight: ["400"],
+const notoSansJp = Noto_Sans_JP({
+  weight: ["400", "500", "700"],
   style: ["normal"],
   subsets: ["latin"],
-  variable: "--font-ibm-plex-sans-jp",
+  variable: "--font-noto-sans-jp",
   display: "swap",
 });
 
@@ -31,10 +31,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="ja"
-      className={`${ibmPlexMono.variable} ${ibmPlexSansJP.variable}`}
-    >
+    <html lang="ja" className={`${notoSans.variable} ${notoSansJp.variable}`}>
       <body>{children}</body>
     </html>
   );

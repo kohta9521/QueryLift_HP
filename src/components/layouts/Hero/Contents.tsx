@@ -25,7 +25,7 @@ const Contents: React.FC = () => {
   };
 
   return (
-    <div className="absolute inset-0 flex md:items-center z-[1] pointer-events-none">
+    <div className="absolute inset-0 flex md:items-center  pointer-events-none">
       <div className="container mx-auto px-4 lg:px-8 flex md:block">
         <div className="max-w-xl ml-4 md:ml-16 lg:ml-32 xl:ml-40 md:mt-0 mt-auto mb-12 md:mb-0 pointer-events-auto">
           <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">
