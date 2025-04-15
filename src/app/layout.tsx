@@ -1,6 +1,10 @@
 // css
 import "../styles/globals.css";
 
+// next
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+
 // fonts
 import { Noto_Sans, Noto_Sans_JP } from "next/font/google";
 
@@ -32,7 +36,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja" className={`${notoSans.variable} ${notoSansJp.variable}`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <Analytics />
+        <SpeedInsights />
+      </body>
     </html>
   );
 }
