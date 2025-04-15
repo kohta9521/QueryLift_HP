@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
       {/* コンテンツ部分 */}
       <Contents />
       {/* ニュース部分 */}
-      <div className="hidden md:block">
+      <div className="">
         <NewsCard
           id="hero-news-1"
           link="/news"

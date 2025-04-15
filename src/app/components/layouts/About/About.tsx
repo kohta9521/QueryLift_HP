@@ -5,18 +5,21 @@ import useAOS from "@/hooks/useAOS";
 
 // components
 import SecTitle from "../../ui/text/SecTitle";
+import ViewMoreButton from "../../ui/button/ViewMoreButton";
 
 // icon
 import { PiStarFourFill } from "react-icons/pi";
 
 // next
 import Image from "next/image";
-import ViewMoreButton from "../../ui/button/ViewMoreButton";
 
 export default function About() {
   useAOS();
   return (
-    <section id="about" className="w-11/12 mx-auto py-30 md:py-40 md:w-7/12">
+    <section
+      id="about"
+      className="w-11/12 mx-auto pt-30 pb-16 md:pt-40 md:pb-20 md:w-7/12"
+    >
       <SecTitle
         id="about"
         icon={

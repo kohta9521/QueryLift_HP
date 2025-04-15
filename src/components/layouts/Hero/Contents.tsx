@@ -32,21 +32,24 @@ const Contents: React.FC = () => {
   return (
     <div
       data-aos="fade-up"
-      className="absolute inset-0 flex md:items-center  pointer-events-none"
+      className="absolute inset-0 flex items-center justify-start lg:justify-center pointer-events-none"
     >
-      <div className="container mx-auto px-4 lg:px-8 flex md:block">
-        <div className="max-w-xl ml-4 md:ml-16 lg:ml-32 xl:ml-40 md:mt-0 mt-auto mb-12 md:mb-0 pointer-events-auto">
-          <h1 className="text-5xl md:text-5xl lg:text-6xl font-bold text-gray-800 mb-4">
+      <div className="container mx-auto px-4 lg:px-8">
+        <div className="max-w-4xl ml-4 lg:mx-auto mb-12 lg:mb-0 pointer-events-auto text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-8xl font-bold text-gray-800 mb-4">
             Dominate <span className="text-blue-600">AI Search Results</span>
           </h1>
 
-          <p className="text-lg md:text-xl text-gray-700 mb-6">
+          <p className="text-medium md:text-lg text-gray-700 mb-6">
             生成AI時代の検索可視性を支配する。
-            QueryLiftが、SEOとGEOの両面から“選ばれる情報”を設計します。
+            QueryLiftが、SEOとGEOの両面から&quot;選ばれる情報&quot;を設計します。
           </p>
 
           {/* SEOチェッカー */}
-          <form onSubmit={handleSubmit} className="mb-6">
+          <form
+            onSubmit={handleSubmit}
+            className="mb-6 max-w-xl mx-auto text-left md:text-center"
+          >
             <div className="flex flex-row">
               <div className="relative flex-grow">
                 <input

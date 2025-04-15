@@ -26,7 +26,9 @@ const Header: React.FC = () => {
     <header className="fixed top-4 left-0 right-0 flex justify-center items-center w-full z-10">
       <div className="w-11/12 h-[60px] bg-white/20 backdrop-blur-md rounded-lg flex items-center justify-between px-4 md:px-6">
         {/* logo */}
-        <div className="font-semibold text-xl">QueryLift</div>
+        <div className="font-semibold text-xl">
+          <p className="text-white">QueryLift</p>
+        </div>
 
         {/* デスクトップナビゲーション - lg以上で表示 */}
         <nav className="hidden lg:block">
