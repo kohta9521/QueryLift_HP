@@ -3,6 +3,7 @@ import HeaderNew from "./components/layouts/Header/HeaderNew";
 import Spline from "@splinetool/react-spline/next";
 import Hero from "./components/layouts/Hero/Hero";
 import About from "./components/layouts/About/About";
+import Products from "./components/layouts/Product/Products";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
         <HeaderNew />
         <Hero />
         <About />
+        <Products />
       </div>
     </div>
   );
