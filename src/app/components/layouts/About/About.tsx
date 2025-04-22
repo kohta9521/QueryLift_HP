@@ -30,7 +30,7 @@ export default function About() {
         jatitle="GEO時代の伴走者"
         entitle="What's QueryLift"
       />
-      <p data-aos="fade-up" className="main-text mb-10">
+      <p data-aos="fade-up" className="main-text mb-10 text-white">
         我々はGEO（生成エンジン最適化）時代に、価値あるブランドが正しく可視化されることを目的として分析ツールを開発しています。
         <br />
         検索は「能動」から「受動」へ変化を遂げています。AI検索型の時代ではユーザーは情報を選べません。AIに選ばれるどうかが全てであり、選ばれない情報は存在していないと同義です。これからはSEO以上の熾烈な争いの時代に変化します。

@@ -4,7 +4,8 @@
   --foreground-rgb: 0, 0, 0;
   --background-rgb: 255, 255, 255;
 
-  --primary: ;
+  --primary: #fe00f6;
+  --primary-rgb: 254, 0, 246;
 
   --font-ibm-plex-mono: "IBM Plex Mono", monospace;
   --font-ibm-plex-sans-jp: "IBM Plex Sans JP", sans-serif;
@@ -16,8 +17,8 @@ body {
     sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  color: white;
+  background: black;
 }
 
 @layer components {
