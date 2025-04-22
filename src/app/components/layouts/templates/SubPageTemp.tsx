@@ -9,7 +9,7 @@ import React from "react";
 import HeaderNew from "../Header/HeaderNew";
 
 // next
-// import Link from 'next/link';
+import Link from "next/link";
 // import Image from 'next/image';
 
 // props
@@ -29,7 +29,6 @@ const SubPageTemp = ({
   title,
   description,
   children,
-  heroImage = "/images/hero-bg.jpg",
   heroHeight = "medium",
   showContact = true,
   accentColor = "blue",
@@ -51,7 +50,7 @@ const SubPageTemp = ({
   }[accentColor];
 
   return (
-    <div className="flex flex-col min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen bg-black">
       {/* ヘッダー */}
       <HeaderNew />
 
@@ -65,21 +64,21 @@ const SubPageTemp = ({
           {/* 背景画像 */}
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: `url(${heroImage})` }}
+            style={{
+              backgroundImage: `url("/images/common/subpage-hero.webp")`,
+            }}
           >
-            <div
-              className={`absolute inset-0 bg-gradient-to-r ${accentColorClass} opacity-80`}
-            />
+            <div className={`absolute inset-0 ${accentColorClass}`} />
           </div>
 
           {/* ヒーローコンテンツ */}
           <div className="relative h-full flex items-center">
             <div className="container mx-auto px-4 md:px-6 lg:px-8">
               <div className="max-w-3xl">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 drop-shadow-md">
+                <h1 className="text-3xl md:text-5xl lg:text-7xl font-bold text-white mb-4 drop-shadow-md">
                   {title}
                 </h1>
-                <p className="text-lg md:text-xl text-white/90 drop-shadow-sm">
+                <p className="text-base md:text-lg text-white/90 drop-shadow-sm">
                   {description}
                 </p>
               </div>
@@ -88,7 +87,7 @@ const SubPageTemp = ({
         </section>
 
         {/* コンテンツセクション */}
-        <section className="py-12 md:py-16 lg:py-20">
+        <section className="py-20 md:py-16 lg:py-20">
           <div className="container mx-auto px-4 md:px-6 lg:px-8">
             {children}
           </div>
@@ -96,21 +95,22 @@ const SubPageTemp = ({
 
         {/* お問い合わせセクション */}
         {showContact && (
-          <section
-            className={`py-12 md:py-16 bg-gradient-to-br ${accentColorClass} text-white`}
-          >
+          <section className={`py-12 md:py-16  ${accentColorClass} text-white`}>
             <div className="container mx-auto px-4 md:px-6 lg:px-8">
               {/* <Contact /> */}
-              <div className="max-w-3xl mx-auto text-center">
+              <div className="max-w-3xl mx-auto text-center rounded-4xl border-[1px] border-white p-10">
                 <h2 className="text-2xl md:text-3xl font-bold mb-4">
                   お問い合わせ
                 </h2>
                 <p className="mb-6">
                   ご質問やご相談がございましたら、お気軽にお問い合わせください。
                 </p>
-                <button className="bg-white text-gray-800 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition-colors duration-300 shadow-md">
+                <Link
+                  href="/contact"
+                  className="bg-white text-gray-800 hover:bg-gray-100 px-6 py-3 rounded-lg font-medium transition-colors duration-300 shadow-md"
+                >
                   お問い合わせフォーム
-                </button>
+                </Link>
               </div>
             </div>
           </section>

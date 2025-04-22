@@ -23,7 +23,7 @@ const NewsCard = ({ id, link, tag, date, text }: NewsCardProps) => {
         className="group w-full max-w-md h-auto min-h-[50px] sm:min-h-[60px] bg-white/40 backdrop-blur-md rounded-lg flex flex-col sm:flex-row items-start sm:items-center justify-between p-2 sm:p-3 sm:px-4 sm:py-3 gap-1 sm:gap-0"
       >
         <div className="flex items-center w-full sm:w-auto">
-          <p className="block px-1.5 py-0.5 sm:px-2 sm:py-1 bg-blue-600 text-white text-xs rounded-full whitespace-nowrap">
+          <p className="block px-1.5 py-0.5 sm:px-2 sm:py-1 bg-purple-600 text-white text-xs rounded-full whitespace-nowrap">
             {tag}
           </p>
           <p className="text-xs sm:text-sm ml-1.5 sm:ml-2 whitespace-nowrap">

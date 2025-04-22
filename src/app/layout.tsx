@@ -16,11 +16,9 @@ const notoSans = Noto_Sans({
   display: "swap",
 });
 
-const notoSansJp = Noto_Sans_JP({
-  weight: ["400", "500", "700"],
-  style: ["normal"],
+const notoSansJP = Noto_Sans_JP({
   subsets: ["latin"],
-  variable: "--font-noto-sans-jp",
+  weight: ["400", "500", "700"],
   display: "swap",
 });
 
@@ -35,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ja" className={`${notoSans.variable} ${notoSansJp.variable}`}>
+    <html lang="ja" className={`${notoSans.variable} ${notoSansJP.className}`}>
       <body>
         {children}
         <Analytics />
