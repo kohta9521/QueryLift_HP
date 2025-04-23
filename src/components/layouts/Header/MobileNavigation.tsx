@@ -25,17 +25,17 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ navItems }) => {
         aria-label="Toggle menu"
       >
         <span
-          className={`block w-6 h-0.5 bg-black transition-transform duration-300 ${
+          className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${
             isMenuOpen ? "rotate-45 translate-y-2" : ""
           }`}
         ></span>
         <span
-          className={`block w-6 h-0.5 bg-black transition-opacity duration-300 ${
+          className={`block w-6 h-0.5 bg-white transition-opacity duration-300 ${
             isMenuOpen ? "opacity-0" : ""
           }`}
         ></span>
         <span
-          className={`block w-6 h-0.5 bg-black transition-transform duration-300 ${
+          className={`block w-6 h-0.5 bg-white transition-transform duration-300 ${
             isMenuOpen ? "-rotate-45 -translate-y-2" : ""
           }`}
         ></span>
@@ -43,7 +43,7 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ navItems }) => {
 
       {/* モバイルメニュー - アニメーション付き */}
       <div
-        className={`absolute top-20 right-0 w-64 bg-white rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`absolute top-20 right-0 w-64 bg-black rounded-lg shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
           isMenuOpen
             ? "max-h-96 opacity-100 transform translate-y-0"
             : "max-h-0 opacity-0 transform -translate-y-4 pointer-events-none"
@@ -60,7 +60,7 @@ const MobileNavigation: React.FC<MobileNavigationProps> = ({ navItems }) => {
                   <Link
                     href={item.href}
                     onClick={() => setIsMenuOpen(false)}
-                    className="inline-block bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-full transition-colors duration-300"
+                    className="inline-block bg-blue-600 hover:bg-blue-700 text-black py-2 px-4 rounded-full transition-colors duration-300"
                   >
                     {item.name}
                   </Link>
