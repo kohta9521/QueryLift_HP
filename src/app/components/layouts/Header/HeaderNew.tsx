@@ -21,6 +21,7 @@ const HeaderNew = () => {
     { name: "About", href: "/about" },
     { name: "Product", href: "/product" },
     { name: "Price", href: "/price" },
+    { name: "Q&A", href: "/questions" },
     { name: "Member", href: "/member" },
     { name: "News", href: "/news" },
     { name: "Company", href: "/company" },

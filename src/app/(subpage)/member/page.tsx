@@ -2,10 +2,10 @@ import React from "react";
 import { FaTwitter } from "react-icons/fa";
 
 // components
-import SubPageTemp from "../components/layouts/templates/SubPageTemp";
-import SubPageTitle from "../components/ui/text/SubPageTitle";
-import SubPageMainText from "../components/ui/text/SubPageMainText";
-import MemberCard from "../components/ui/card/MemberCard";
+import SubPageTemp from "../../components/layouts/templates/SubPageTemp";
+import SubPageTitle from "../../components/ui/text/SubPageTitle";
+import SubPageMainText from "../../components/ui/text/SubPageMainText";
+import MemberCard from "../../components/ui/card/MemberCard";
 
 // icon
 

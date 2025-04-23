@@ -34,7 +34,7 @@ const Contents: React.FC = () => {
       data-aos="fade-up"
       className="absolute inset-0 flex items-center justify-start lg:justify-center pointer-events-none"
     >
-      <div className="container mx-auto px-4 lg:px-8">
+      <div className="container mx-auto mt-20 px-4 lg:px-8">
         <div className="max-w-4xl ml-4 lg:mx-auto mb-12 lg:mb-0 pointer-events-auto text-center">
           <h1 className="text-4xl md:text-5xl lg:text-8xl font-bold text-white mb-4">
             Dominate{" "}
